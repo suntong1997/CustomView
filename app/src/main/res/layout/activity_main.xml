@@ -11,122 +11,117 @@
         android:layout_height="match_parent"
         android:padding="10dp">
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="hfghg;df"
-            app:cornerRadius="100dp" />
+            android:background="@drawable/txt_selector"
+            android:text="第一行代码"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="jkj;df"
-            app:cornerRadius="100dp" />
+            android:background="@drawable/txt_selector"
+            android:text="Java核心技术"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=";df" android:layout_margin="5dp"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="C++从入门到入土"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="yj" android:layout_margin="5dp"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="Python实践"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hhhhh;df" android:layout_margin="5dp"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="深入理解计算机系统"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nnnnnnnnnnn;df"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="操作系统导论"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hgjyjfhgjghjghj;df"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="数据分析"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="djd"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="深入理解LINUX内核"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="fhg"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="数学之美"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="jjjjj;df"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="C Primer Plus 第六版"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hfghgf;df" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="JavaScript 高级程序设计"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=";df"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="MySQL必知必会"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hgfhh;df"
-            app:cornerRadius="100dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="Android进阶之光"
+            android:textColor="@color/black" />
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="dfgdsfgfdgdfgfdgdgfdgfd;df"
-            app:cornerRadius="100dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ghdfhhfghgfhgfhgh;df"
-            app:cornerRadius="100dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="jgfj;df"
-            app:cornerRadius="100dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fd"
-            app:cornerRadius="100dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=";df"
-            app:cornerRadius="100dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="djffjl;df"
-            app:cornerRadius="100dp" />
-
-
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="Android进阶解密"
+            android:textColor="@color/black" />
     </com.example.flowlayout.FlowLayout>
 
 </ScrollView>

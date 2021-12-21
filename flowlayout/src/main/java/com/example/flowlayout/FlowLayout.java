@@ -83,7 +83,6 @@ public class FlowLayout extends ViewGroup {
                 mLineViews = new ArrayList<>();//创建新的一行
 
                 flowLayoutWidth = Math.max(flowLayoutWidth, lineWidth);
-
                 flowLayoutHeight += lineHeight;
                 mHeights.add(lineHeight);
                 lineWidth = 0;
