@@ -8,102 +8,123 @@
 
     <com.example.flowlayout.FlowLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hfghg;df" />
+            android:layout_margin="5dp"
+            android:text="hfghg;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="jkj;df" />
+            android:layout_margin="5dp"
+            android:text="jkj;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=";df" />
+            android:text=";df" android:layout_margin="5dp"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="yjhgjhgjghjhg;df" />
+            android:text="yj" android:layout_margin="5dp"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hhhhh;df" />
+            android:text="hhhhh;df" android:layout_margin="5dp"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nnnnnnnnnnn;df" />
+            android:text="nnnnnnnnnnn;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hgjyjfhgjghjghj;df" />
+            android:text="hgjyjfhgjghjghj;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="djd" />
+            android:text="djd"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="fhg" />
+            android:text="fhg"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="jjjjj;df" />
+            android:text="jjjjj;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="hfghgf;df" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=";df" />
+            android:text=";df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hgfhh;df" />
+            android:text="hgfhh;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="dfgdsfgfdgdfgfdgdgfdgfd;df" />
+            android:text="dfgdsfgfdgdfgfdgdgfdgfd;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ghdfhhfghgfhgfhgh;df" />
+            android:text="ghdfhhfghgfhgfhgh;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="jgfj;df" />
+            android:text="jgfj;df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="fd" />
+            android:text="fd"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=";df" />
+            android:text=";df"
+            app:cornerRadius="100dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="djffjl;df" />
+            android:text="djffjl;df"
+            app:cornerRadius="100dp" />
 
 
     </com.example.flowlayout.FlowLayout>
