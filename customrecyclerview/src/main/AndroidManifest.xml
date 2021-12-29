@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.customdecoration" >
+
+    <application>
+        <activity
+            android:name=".activity.QQMessageItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".decoartion.RecyclerActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

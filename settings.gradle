@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "CustomView"
 include ':app'
 include ':flowlayout'
+include ':customrecyclerview'

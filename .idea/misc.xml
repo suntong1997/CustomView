@@ -4,7 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/drawable/txt_selector.xml" value="0.2395" />
-        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/layout/activity_main.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/layout/activity_main.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customdecoration/src/main/res/layout/activity_main.xml" value="0.29157759726378796" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customdecoration/src/main/res/layout/book_item.xml" value="0.29157759726378796" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customitemdecoration/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customitemdecoration/src/main/res/layout/book_item.xml" value="0.13595553655408293" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_decoration_custom.xml" value="0.2261650277896537" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_qq_message_item.xml" value="0.22231722958529285" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_qqmessage_item.xml" value="0.11053071458420392" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/book_item.xml" value="0.11053071458420392" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/qq_message_item_layout.xml" value="0.11053071458420392" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/flowlayout/src/main/res/drawable/txt_selector.xml" value="0.262" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/flowlayout/src/main/res/layout/activity_main.xml" value="0.29157759726378796" />
       </map>
     </option>
   </component>

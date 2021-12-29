@@ -1,127 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.flowlayout.FlowLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <TextView
+
+        <Button
+            android:id="@+id/custom_decoration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="第一行代码"
-            android:textColor="@color/black" />
+            android:text="自定义分割线" />
 
-        <TextView
+        <Button
+            android:id="@+id/qq_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="Java核心技术"
-            android:textColor="@color/black" />
+            android:text="QQ左滑删除效果" />
+    </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="C++从入门到入土"
-            android:textColor="@color/black" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="Python实践"
-            android:textColor="@color/black" />
+    <!--    <com.example.flowlayout.FlowLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:padding="10dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="深入理解计算机系统"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="第一行代码"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="操作系统导论"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="Java核心技术"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="数据分析"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="C++从入门到入土"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="深入理解LINUX内核"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="Python实践"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="数学之美"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="深入理解计算机系统"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="C Primer Plus 第六版"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="操作系统导论"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="JavaScript 高级程序设计"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="数据分析"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="MySQL必知必会"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="深入理解LINUX内核"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="Android进阶之光"
-            android:textColor="@color/black" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="数学之美"-->
+    <!--            android:textColor="@color/black" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/txt_selector"
-            android:text="Android进阶解密"
-            android:textColor="@color/black" />
-    </com.example.flowlayout.FlowLayout>
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="C Primer Plus 第六版"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="JavaScript 高级程序设计"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="MySQL必知必会"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="Android进阶之光"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@drawable/txt_selector"-->
+    <!--            android:text="Android进阶解密"-->
+    <!--            android:textColor="@color/black" />-->
+    <!--    </com.example.flowlayout.FlowLayout>-->
 
 </ScrollView>
