@@ -74,6 +74,13 @@ public class DragLayout extends FrameLayout {
             }
 
             @Override
+            public void onViewPositionChanged(@NonNull View changedView, int left, int top, int dx, int dy) {
+                super.onViewPositionChanged(changedView, left, top, dx, dy);
+                float percent = mMainView.getLeft() / (float) mMenuViewWidth;
+                excuteAnimation(percent);
+            }
+
+            @Override
             public void onViewReleased(@NonNull View releasedChild, float xvel, float yvel) {
                 super.onViewReleased(releasedChild, xvel, yvel);
                 if (mMainView.getLeft() < mMenuViewWidth / 2) {
@@ -97,5 +104,13 @@ public class DragLayout extends FrameLayout {
     public void closeMenu() {
         mDragger.smoothSlideViewTo(mMainView, 0, 0);
         ViewCompat.postInvalidateOnAnimation(this);
+    }
+
+    public void excuteAnimation(float percent) {
+        mMenuView.setScaleX(0.5f + 0.5f * percent);
+        mMenuView.setScaleY(0.5f + 0.5f * percent);
+
+        mMainView.setScaleX(1 - percent * 0.2f);
+        mMainView.setScaleY(1 - percent * 0.2f);
     }
 }
