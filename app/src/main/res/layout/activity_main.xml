@@ -16,13 +16,37 @@
             android:id="@+id/custom_decoration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="自定义分割线" />
+            android:text="Recyclerview吸顶效果" />
 
         <Button
             android:id="@+id/qq_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QQ左滑删除效果" />
+
+        <Button
+            android:id="@+id/bt_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片翻转" />
+
+        <Button
+            android:id="@+id/bt_mi_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿小米3D时钟" />
+
+        <Button
+            android:id="@+id/bt_coverflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D画廊" />
+
+        <Button
+            android:id="@+id/bt_draglayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拖拽控件" />
     </LinearLayout>
 
 

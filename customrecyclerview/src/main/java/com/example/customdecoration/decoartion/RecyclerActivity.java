@@ -36,7 +36,7 @@ public class RecyclerActivity extends AppCompatActivity {
         mRecyclerView.addItemDecoration(new MyItemDecoration(this, position -> mDatas.get(position).substring(0, 1)));
         mItemTouchHelper = new ItemTouchHelper(new MyItemTouchHelperCallBack((ArrayList<String>) mDatas,
                 adapter));
-//        mItemTouchHelper.attachToRecyclerView(mRecyclerView);
+        mItemTouchHelper.attachToRecyclerView(mRecyclerView);
     }
 
     private void initData() {

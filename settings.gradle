@@ -16,3 +16,5 @@ rootProject.name = "CustomView"
 include ':app'
 include ':flowlayout'
 include ':customrecyclerview'
+include ':camera'
+include ':draglayout'

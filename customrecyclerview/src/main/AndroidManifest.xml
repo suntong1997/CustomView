@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.customdecoration" >
+    package="com.example.customdecoration">
 
     <application>
+        <activity
+            android:name=".coverflow.CoverFlowActivity"
+            android:exported="false"
+           />
         <activity
             android:name=".activity.QQMessageItemActivity"
             android:exported="false" />

@@ -5,15 +5,29 @@
       <map>
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/drawable/txt_selector.xml" value="0.2395" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/layout/activity_main.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/drawable/drawable.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/layout/activity_mi_clock.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/layout/activity_rotate3_dactivity.xml" value="0.1420810697868784" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/layout/activity_rotate_3d.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/layout/activity_translate.xml" value="0.2261650277896537" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/layout/drawable.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/camera/src/main/res/mipmap/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customdecoration/src/main/res/layout/activity_main.xml" value="0.29157759726378796" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customdecoration/src/main/res/layout/book_item.xml" value="0.29157759726378796" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customitemdecoration/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customitemdecoration/src/main/res/layout/book_item.xml" value="0.13595553655408293" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_decoration_custom.xml" value="0.2261650277896537" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_flow_cover.xml" value="0.1420810697868784" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_qq_message_item.xml" value="0.22231722958529285" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/activity_qqmessage_item.xml" value="0.11053071458420392" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/book_item.xml" value="0.11053071458420392" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/item_coverflow.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/qq_message_item_layout.xml" value="0.11053071458420392" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/customrecyclerview/src/main/res/layout/rv_item.xml" value="0.20806890299184044" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/draglayout/src/main/res/layout/slide_menu_layout.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/drawlayout/src/main/res/layout/activity_drag_layout.xml" value="0.1420810697868784" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/drawlayout/src/main/res/layout/slide_content_layout.xml" value="0.1420810697868784" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/flowlayout/src/main/res/drawable/txt_selector.xml" value="0.262" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/flowlayout/src/main/res/layout/activity_main.xml" value="0.29157759726378796" />
       </map>
