@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/VerificationCodeView/src/main/res/drawable/edt_background.xml" value="0.1" />
+        <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/VerificationCodeView/src/main/res/drawable/edt_cursor.xml" value="0.1" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/VerificationCodeView/src/main/res/drawable/et_cursor.xml" value="0.1" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/VerificationCodeView/src/main/res/layout/activity_verification_code_view.xml" value="0.2085222121486854" />
         <entry key="..\:/Users/a520s/AndroidStudioProjects/CustomView/app/src/main/res/drawable/txt_selector.xml" value="0.2395" />

@@ -15,7 +15,8 @@
         android:gravity="center"
         app:editTextBackground="@drawable/edt_background"
         app:editTextCursor="@drawable/edt_cursor"
-        app:inputNumber="5"
+        app:inputNumber="6"
+        app:spacing="10dp"
         app:inputTextSize="8sp"
         app:isCursorVisible="true" />
 

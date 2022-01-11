@@ -32,7 +32,7 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
     private int mBisectSpacing;
     private InputType mInputType;
     private boolean isCursorVisible;
-    private int mCursorStyle;
+    private int mCursorColor;
     private int mViewWidth;
     private OnCodeFinishListener codeFinishListener;
 
@@ -44,30 +44,30 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
         super(context, attrs);
         this.mContext = context;
 
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.VerificationCodeView);
-        mInputNumber = typedArray.getInteger(R.styleable.VerificationCodeView_inputNumber, 4);
-        mEditTextWidth = typedArray.getInteger(R.styleable.VerificationCodeView_editTextWidth, 150);
-        mInputType = InputType.values()[typedArray.getInteger(R.styleable.VerificationCodeView_android_inputType, InputType.TEXT.ordinal())];
-        mInputTextColor = typedArray.getDimensionPixelSize(R.styleable.VerificationCodeView_inputTextColor, Color.BLACK);
-        mInputTextSize = typedArray.getDimensionPixelSize(R.styleable.VerificationCodeView_inputTextSize, 16);
-        mEditTextBackground = typedArray.getResourceId(R.styleable.VerificationCodeView_editTextBackground, R.drawable.edt_background);
-        mCursorStyle = typedArray.getResourceId(R.styleable.VerificationCodeView_editTextCursor, R.drawable.edt_cursor);
-        isCursorVisible = typedArray.getBoolean(R.styleable.VerificationCodeView_isCursorVisible, true);
-        isBisect = typedArray.hasValue(R.styleable.VerificationCodeView_spacing);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.VerificationCodeView);
+        mInputNumber = a.getInteger(R.styleable.VerificationCodeView_inputNumber, 4);
+        mEditTextWidth = a.getInteger(R.styleable.VerificationCodeView_editTextWidth, 190);
+        mInputType = InputType.values()[a.getInteger(R.styleable.VerificationCodeView_android_inputType, InputType.TEXT.ordinal())];
+        mInputTextColor = a.getDimensionPixelSize(R.styleable.VerificationCodeView_inputTextColor, Color.BLACK);
+        mInputTextSize = a.getDimensionPixelSize(R.styleable.VerificationCodeView_inputTextSize, 16);
+        mEditTextBackground = a.getResourceId(R.styleable.VerificationCodeView_editTextBackground, R.drawable.edt_background);
+        mCursorColor = a.getResourceId(R.styleable.VerificationCodeView_editTextCursor, R.drawable.edt_cursor);
+        isCursorVisible = a.getBoolean(R.styleable.VerificationCodeView_isCursorVisible, true);
+        isBisect = a.hasValue(R.styleable.VerificationCodeView_spacing);
 
         if (isBisect) {
-            mSpacing = typedArray.getDimensionPixelSize(R.styleable.VerificationCodeView_spacing, 0);
+            mSpacing = a.getDimensionPixelSize(R.styleable.VerificationCodeView_spacing, 0);
         }
 
         initView();
-        typedArray.recycle();
+        a.recycle();
     }
 
     public VerificationCodeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public void setmContext(Context mContext) {
+    public void setContext(Context mContext) {
         this.mContext = mContext;
     }
 
@@ -108,20 +108,26 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
     }
 
     public void setCursorStyle(int mCursorStyle) {
-        this.mCursorStyle = mCursorStyle;
+        this.mCursorColor = mCursorStyle;
     }
 
     public void setViewWidth(int mWidth) {
         this.mEditTextWidth = mWidth;
     }
 
+    public void setOnCodeFinishListener(OnCodeFinishListener codeFinishListener) {
+        this.codeFinishListener = codeFinishListener;
+    }
+
     private void initView() {
         for (int i = 0; i < mInputNumber; i++) {
             EditText editText = new EditText(mContext);
+            editText.setFocusable(true);
             initEditText(editText, i);
             addView(editText);
             if (i == 0) {
                 editText.setFocusable(true);
+                editText.setCursorVisible(true);
             }
         }
     }
@@ -134,7 +140,8 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
         editText.setMaxEms(1);
         editText.setTextColor(mInputTextColor);
         editText.setTextSize(mInputTextSize);
-        editText.setTextSize(mCursorStyle);
+        editText.setCursorVisible(isCursorVisible);
+        editText.setTextColor(mCursorColor);
         editText.setMaxLines(1);
         editText.setFilters(new InputFilter[]{new InputFilter.LengthFilter(1)});
         switch (mInputType) {
@@ -160,7 +167,7 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
             try {
                 @SuppressLint("SoonBlockedPrivateApi") Field field = TextView.class.getDeclaredField("mCursorDrawableRes");
                 field.setAccessible(true);
-                field.set(editText, mCursorStyle);
+                field.set(editText, mCursorColor);
             } catch (NoSuchFieldException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
@@ -208,16 +215,16 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
             focus();
         }
         if (codeFinishListener != null) {
-            codeFinishListener.onTextChange(this, getResult());
+            codeFinishListener.onTextChange(this, getCode());
             EditText editText = (EditText) getChildAt(mInputNumber - 1);
             if (editText.getText().length() > 0) {
-                codeFinishListener.onComplete(this, getResult());
+                codeFinishListener.onComplete(this, getCode());
             }
         }
     }
 
     //获取输入的验证码
-    private String getResult() {
+    private String getCode() {
         StringBuffer buffer = new StringBuffer();
         EditText editText;
         for (int i = 0; i < mInputNumber; i++) {
@@ -262,6 +269,16 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
             deleteInput();
         }
         return false;
+    }
+
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        int childCount = getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View child = getChildAt(i);
+            child.setEnabled(enabled);
+        }
     }
 
     private void deleteInput() {
