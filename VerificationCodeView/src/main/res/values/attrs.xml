@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerificationCodeView">
+        <attr name="inputNumber" format="integer" />
+        <attr name="android:inputType">
+            <enum name="text" value="0" />
+            <enum name="password" value="1" />
+        </attr>
+        <attr name="editTextWidth" format="dimension|reference" />
+        <attr name="editTextCursor" format="reference" />
+        <attr name="isCursorVisible" format="boolean" />
+        <attr name="spacing" format="dimension|reference" />
+        <attr name="inputTextColor" format="color|reference" />
+        <attr name="inputTextSize" format="dimension|reference" />
+        <attr name="editTextBackground" format="reference" />
+
+    </declare-styleable>
+</resources>

@@ -43,11 +43,6 @@ public class DragLayout extends FrameLayout {
         return true;
     }
 
-    public void setView(View mainView, LayoutParams mainLayoutParams) {
-        mMainView = mainView;
-        addView(mMainView, mainLayoutParams);
-    }
-
     public void setView(View mainView, LayoutParams mainLayoutParams,
                         View menuView, LayoutParams menuLayoutParams) {
         mMenuView = menuView;
@@ -68,6 +63,7 @@ public class DragLayout extends FrameLayout {
             @Override
             public int clampViewPositionHorizontal(@NonNull View child, int left, int dx) {
                 if (left > 0) {
+                    //设置最大滑动距离
                     return Math.min(left, mMenuViewWidth);
                 }
                 return 0;
@@ -83,6 +79,7 @@ public class DragLayout extends FrameLayout {
             @Override
             public void onViewReleased(@NonNull View releasedChild, float xvel, float yvel) {
                 super.onViewReleased(releasedChild, xvel, yvel);
+                //根据滑动距离判断View松手后回到的位置
                 if (mMainView.getLeft() < mMenuViewWidth / 2) {
                     mDragger.smoothSlideViewTo(mMainView, 0, 0);
                 } else {

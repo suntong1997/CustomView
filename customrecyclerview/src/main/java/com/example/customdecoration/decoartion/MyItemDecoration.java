@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -55,7 +54,6 @@ public class MyItemDecoration extends RecyclerView.ItemDecoration {
     private final OnGroupListener listener;
 
     interface OnGroupListener {
-
         // 获取组名
         String getGroupName(int position);
     }
@@ -117,6 +115,7 @@ public class MyItemDecoration extends RecyclerView.ItemDecoration {
                 canvas.drawRect(left, top,
                         child.getWidth() + left, bottom, dividerPaint);
 
+                //设置字体基线
                 float baseLine = (top + bottom) / 2f - (textPaint.descent() + textPaint.ascent()) / 2f;
                 canvas.drawText(getGroupName(childAdapterPosition), left + dpToPx(10),
                         baseLine, textPaint);
@@ -131,7 +130,7 @@ public class MyItemDecoration extends RecyclerView.ItemDecoration {
     @Override
     public void onDrawOver(Canvas canvas, RecyclerView parent, RecyclerView.State state) {
         super.onDrawOver(canvas, parent, state);
-        //获取屏幕第一个子View
+        //获取第一个可见的子View
         View firstVisibleView = parent.getChildAt(0);
         int firstVisiblePosition = parent.getChildAdapterPosition(firstVisibleView);
         String groupName = getGroupName(firstVisiblePosition);

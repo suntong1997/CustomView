@@ -2,8 +2,6 @@ package com.example.customview;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.Nullable;
@@ -11,11 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.camera.MiClockActivity;
 import com.example.camera.Rotate3DActivity;
-import com.example.camera.TranslateActivity;
 import com.example.customdecoration.activity.QQMessageItemActivity;
 import com.example.customdecoration.coverflow.CoverFlowActivity;
 import com.example.customdecoration.decoartion.RecyclerActivity;
 import com.example.drawlayout.DragLayoutActivity;
+import com.example.flowlayout.FlowLayoutActivity;
+import com.example.motionlayout.MotionLayoutActivity;
+import com.sun.verificationcodeview.VerificationCodeViewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button customDecorBtn;
@@ -57,12 +57,25 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(getApplicationContext(), CoverFlowActivity.class);
             startActivity(intent);
         });
-        findViewById(R.id.bt_draglayout).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(getApplicationContext(), DragLayoutActivity.class);
-                startActivity(intent);
-            }
+
+        findViewById(R.id.bt_draglayout).setOnClickListener(v -> {
+            intent = new Intent(getApplicationContext(), DragLayoutActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.bt_flowlayout).setOnClickListener(v -> {
+            intent = new Intent(getApplicationContext(), FlowLayoutActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.bt_motion_layout).setOnClickListener(v -> {
+            intent = new Intent(getApplicationContext(), MotionLayoutActivity.class);
+            startActivity(intent);
+        });
+
+        findViewById(R.id.bt_verification_code_view).setOnClickListener(v -> {
+            intent = new Intent(getApplicationContext(), VerificationCodeViewActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FlowLayoutActivity">
 
     <com.example.flowlayout.FlowLayout
         android:layout_width="match_parent"
@@ -95,8 +95,33 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/txt_selector"
+            android:text="Hadoop3实战指南"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="Rust权威指南"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
+            android:text="算法"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/txt_selector"
             android:text="JavaScript 高级程序设计"
             android:textColor="@color/black" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -121,6 +146,7 @@
             android:background="@drawable/txt_selector"
             android:text="Android进阶解密"
             android:textColor="@color/black" />
+
     </com.example.flowlayout.FlowLayout>
 
 </androidx.core.widget.NestedScrollView>
