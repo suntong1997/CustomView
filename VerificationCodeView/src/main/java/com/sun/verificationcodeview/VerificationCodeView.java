@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.os.Build;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
@@ -120,28 +121,29 @@ public class VerificationCodeView extends LinearLayout implements TextWatcher, V
     }
 
     private void initView() {
+        setFocusable(false);
         for (int i = 0; i < mInputNumber; i++) {
             EditText editText = new EditText(mContext);
-            editText.setFocusable(true);
             initEditText(editText, i);
             addView(editText);
             if (i == 0) {
                 editText.setFocusable(true);
-                editText.setCursorVisible(true);
             }
         }
     }
+
 
     private void initEditText(EditText editText, int i) {
         editText.setTextAlignment(TEXT_ALIGNMENT_CENTER);
         editText.setGravity(Gravity.CENTER);
         editText.setId(i);
-        editText.setCursorVisible(false);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            editText.setTextCursorDrawable(R.drawable.edt_cursor);
+        }
         editText.setMaxEms(1);
         editText.setTextColor(mInputTextColor);
         editText.setTextSize(mInputTextSize);
         editText.setCursorVisible(isCursorVisible);
-        editText.setTextColor(mCursorColor);
         editText.setMaxLines(1);
         editText.setFilters(new InputFilter[]{new InputFilter.LengthFilter(1)});
         switch (mInputType) {
