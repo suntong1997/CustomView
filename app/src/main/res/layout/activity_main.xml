@@ -9,10 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:textAllCaps="false">
 
 
         <Button
+            android:textAllCaps="false"
             android:id="@+id/custom_decoration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,19 +54,28 @@
             android:id="@+id/bt_flowlayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Flowyout" />
+            android:text="Flowyout"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/bt_motion_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MotionLayout" />
+            android:text="MotionLayout"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/bt_verification_code_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="验证码输入框" />
+
+        <Button
+            android:id="@+id/bt_chartview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChartView"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </ScrollView>

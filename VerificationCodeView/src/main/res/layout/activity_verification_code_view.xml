@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
     tools:context=".VerificationCodeViewActivity">
 
@@ -16,9 +17,9 @@
         app:editTextBackground="@drawable/edt_background"
         app:editTextCursor="@drawable/edt_cursor"
         app:inputNumber="6"
-        app:spacing="10dp"
         app:inputTextSize="8sp"
-        app:isCursorVisible="true" />
+        app:isCursorVisible="true"
+        app:spacing="10dp" />
 
     <TextView
         android:id="@+id/text"

@@ -1,12 +1,12 @@
 package com.example.customdecoration.coverflow;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-
 import com.example.customdecoration.R;
-import com.example.customdecoration.customlayoutmanager.CustomLayoutManager;
+import com.example.customdecoration.layoutmanager.CustomLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;

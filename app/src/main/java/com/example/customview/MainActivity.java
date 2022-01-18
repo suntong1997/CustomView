@@ -2,6 +2,7 @@ package com.example.customview;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.Nullable;
@@ -15,6 +16,7 @@ import com.example.customdecoration.decoartion.RecyclerActivity;
 import com.example.drawlayout.DragLayoutActivity;
 import com.example.flowlayout.FlowLayoutActivity;
 import com.example.motionlayout.MotionLayoutActivity;
+import com.sun.chartview.ChartViewActivity;
 import com.sun.verificationcodeview.VerificationCodeViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -76,6 +78,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bt_verification_code_view).setOnClickListener(v -> {
             intent = new Intent(getApplicationContext(), VerificationCodeViewActivity.class);
             startActivity(intent);
+        });
+        findViewById(R.id.bt_chartview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), ChartViewActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }

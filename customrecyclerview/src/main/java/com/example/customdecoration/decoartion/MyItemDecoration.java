@@ -140,8 +140,7 @@ public class MyItemDecoration extends RecyclerView.ItemDecoration {
         if (firstVisibleView.getBottom() <= groupDividerHeight && isFirstGroupItem(firstVisiblePosition + 1)) {
             canvas.drawRect(left, 0, right, firstVisibleView.getBottom(), dividerPaint);
             float baseLine = firstVisibleView.getBottom() / 2f - (textPaint.descent() + textPaint.ascent()) / 2f;
-            canvas.drawText(groupName, left + dpToPx(10),
-                    baseLine, textPaint);
+            canvas.drawText(groupName, left + dpToPx(10), baseLine, textPaint);
             //固定group在顶部
         } else {
             canvas.drawRect(left, 0, right, groupDividerHeight, dividerPaint);

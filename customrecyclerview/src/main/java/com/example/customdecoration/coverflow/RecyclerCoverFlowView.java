@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.customdecoration.customlayoutmanager.CustomLayoutManager;
+import com.example.customdecoration.layoutmanager.CustomLayoutManager;
 
 public class RecyclerCoverFlowView extends RecyclerView {
     public RecyclerCoverFlowView(@NonNull Context context) {

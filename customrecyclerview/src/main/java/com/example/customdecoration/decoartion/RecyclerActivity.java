@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.customdecoration.R;
 import com.example.customdecoration.callback.MyItemTouchHelperCallBack;
-import com.example.customdecoration.customlayoutmanager.CustomLayoutManager;
 
 import java.util.ArrayList;
 import java.util.Collections;

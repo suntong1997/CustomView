@@ -1,6 +1,5 @@
-package com.example.customdecoration.customlayoutmanager;
+package com.example.customdecoration.layoutmanager;
 
-import android.Manifest;
 import android.graphics.Rect;
 import android.util.SparseArray;
 import android.util.SparseBooleanArray;
@@ -30,7 +29,7 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
 
     @Override
     public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
-        if (getItemCount() == 0) {//没有Item，界面空着吧
+        if (getItemCount() == 0) {
             detachAndScrapAttachedViews(recycler);
             return;
         }
@@ -46,18 +45,19 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
 
         mIntervalWidth = getIntervalWidth();
 
-        mStartX = getWidth() / 2 - mIntervalWidth;
+        mStartX = getWidth() / 2 - mIntervalWidth;//第一个item的起点
 
         //定义水平方向的偏移量
         int offsetX = 0;
 
         for (int i = 0; i < getItemCount(); i++) {
+            //保存每个item的位置
             Rect rect = new Rect(mStartX + offsetX, 0, mStartX + offsetX + mItemWidth, mItemHeight);
             mItemRects.put(i, rect);
             mHasAttachedItems.put(i, false);
             offsetX += mIntervalWidth;
         }
-        int visibleCount = getHorizontalSpace() / mIntervalWidth;
+        int visibleCount = getHorizontalSpace() / mIntervalWidth;//一屏可以显示的item数
         Rect visibleRect = getVisibleArea();
         for (int i = 0; i < visibleCount; i++) {
             insertView(i, visibleRect, recycler, false);
@@ -93,9 +93,9 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
             travel = getMaxOffset() - mSumDx;
         }
 
-                mSumDx += travel;
+        mSumDx += travel;
 
-                Rect visibleRect = getVisibleArea();
+        Rect visibleRect = getVisibleArea();
 
         //回收越界子View
         for (int i = getChildCount() - 1; i >= 0; i--) {

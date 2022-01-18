@@ -63,21 +63,19 @@ public class FlowLayout extends ViewGroup {
 
         int childCount = this.getChildCount();
 
-
         for (int i = 0; i < childCount; i++) {
             View child = this.getChildAt(i);
             measureChild(child, widthMeasureSpec, heightMeasureSpec);
             measureChildWithMargins(child, widthMeasureSpec, 0, heightMeasureSpec, 0);
 
             MarginLayoutParams lp = (MarginLayoutParams) child.getLayoutParams();
-            //测量子view的margin
+            //获取子view的margin
             int childMarginLeftRight = lp.leftMargin + lp.rightMargin;
             int childMarginTopBottom = lp.topMargin + lp.bottomMargin;
 
-            //测量子view的测量宽高
+            //获取子view的测量宽高
             int childWidth = child.getMeasuredWidth();
             int childHeight = child.getMeasuredHeight();
-
 
             if (lineWidth + childWidth + childMarginLeftRight + paddingLeftRight > widthSize) {
                 mViews.add(mLineViews);
@@ -134,7 +132,7 @@ public class FlowLayout extends ViewGroup {
                 int bottom = top + child.getMeasuredHeight();
                 // 布局子View
                 child.layout(left, top, right, bottom);
-                currX += child.getMeasuredWidth()+lp.rightMargin;
+                currX += child.getMeasuredWidth() + lp.rightMargin;
             }
             currY += lineHeight;
             currX = getPaddingLeft();

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChartStyle">
+        <attr name="graphTitle" format="string" />
+        <attr name="xAxisTitle" format="string" />
+        <attr name="yAxisTitle" format="string" />
+        <attr name="axisTitleSize" format="dimension|integer" />
+        <attr name="axisTitleColor" format="color|integer" />
+    </declare-styleable>
+</resources>
